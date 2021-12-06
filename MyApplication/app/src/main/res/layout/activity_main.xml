@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Edit text to enter name -->
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3a383b"
+        android:text=" Ana sayfa"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Islem Seciniz"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="normal" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#3a383b"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="27dp" />
+
+    <View
+        android:layout_marginLeft="50dp"
+        android:layout_width="314dp"
+        android:layout_height="1dp"
+        android:background="#3a383b" />
+
+    <Button
+        android:id="@+id/button_liste"
+        android:layout_width="318dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="0"
+        android:background="#FFFFFF"
+        android:drawableLeft="@drawable/kurum_liste"
+        android:text="Anlaşmalı Kurumları Listele"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:backgroundTint="#FFFFFF" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+    <View
+        android:layout_marginLeft="50dp"
+        android:layout_width="314dp"
+        android:layout_height="1dp"
+        android:background="#3a383b" />
+
+    <Button
+        android:id="@+id/button_ekle"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="0"
+        android:background="#FFFFFF"
+        android:text="Anlaşmalı Kurum Ekle"
+        android:drawableLeft="@drawable/add_icon"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:backgroundTint="#FFFFFF" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="36dp" />
+
+    <View
+        android:layout_marginLeft="50dp"
+        android:layout_width="314dp"
+        android:layout_height="1dp"
+        android:background="#3a383b" />
+
+    <Button
+        android:id="@+id/button_remove"
+        android:layout_width="314dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="0"
+        android:background="#FFFFFF"
+        android:text="Anlaşmalı Kurum Çıkar"
+        android:drawableLeft="@drawable/cikarma_icon"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:backgroundTint="#FFFFFF" />
+
+    <!-- Edit text to enter age -->
+
+    <!-- Button to add Name -->
+
+    <!-- Button to print Name -->
+
+</LinearLayout>
