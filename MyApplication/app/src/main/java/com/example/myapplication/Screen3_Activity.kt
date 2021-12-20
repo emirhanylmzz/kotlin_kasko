@@ -24,7 +24,7 @@ class Screen3_Activity : AppCompatActivity() {
         // we have called method to get
         // all names from our database
         // and add to name text view
-        val cursor = db.getValues()
+        val cursor = db.getValuesKurum()
 
         // moving the cursor to first position and
         // appending value in the text view

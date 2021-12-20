@@ -9,7 +9,5 @@ class Screen5_activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_screen5)
 
-
-        companyname
     }
 }

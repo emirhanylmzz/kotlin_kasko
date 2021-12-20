@@ -99,10 +99,4 @@
         android:textSize="15dp"
         app:backgroundTint="#FFFFFF" />
 
-    <!-- Edit text to enter age -->
-
-    <!-- Button to add Name -->
-
-    <!-- Button to print Name -->
-
 </LinearLayout>

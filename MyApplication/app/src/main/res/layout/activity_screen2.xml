@@ -38,7 +38,8 @@
                 android:background="@drawable/transparent_bg_bordered_button"
                 android:hint="    Kurum Adı..."
                 android:textSize="15dp"
-                android:inputType="text" />
+                android:inputType="text"
+                android:maxLength="30"/>
 
             <TextView
                 android:id="@+id/textView3"
@@ -104,7 +105,9 @@
                 android:background="@drawable/transparent_bg_bordered_button"
                 android:hint="    (5XX) XXX-XX-XX"
                 android:textSize="15dp"
-                android:inputType="phone" />
+                android:inputType="phone"
+                android:maxLength="10"
+                android:digits="0123456789+"/>
 
             <TextView
                 android:id="@+id/textView6"
@@ -124,8 +127,8 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/transparent_bg_bordered_button"
-                android:text="Seciniz"
-                android:textSize="15dp"/>
+                android:hint="Seciniz"
+                android:textSize="15dp" />
 
 
             <TextView
@@ -148,7 +151,8 @@
                 android:background="@drawable/transparent_bg_bordered_button"
                 android:hint="    Adres"
                 android:textSize="15dp"
-                android:inputType="phone" />
+                android:inputType="text"
+                android:maxLength="40"/>
 
             <TextView
                 android:id="@+id/textView8"
@@ -158,7 +162,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Anlaşma Türü"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                />
 
             <Spinner
                 android:id="@+id/anlasmaturu"

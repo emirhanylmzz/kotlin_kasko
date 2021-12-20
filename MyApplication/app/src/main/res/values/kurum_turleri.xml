@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kurum_turleri">
+        <item>Genel servis</item>
+        <item>Oto lastik</item>
+        <item>Boya</item>
+        <item>Kaporta</item>
+        <item>Şanzıman</item>
+    </string-array>
+</resources>

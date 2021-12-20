@@ -15,21 +15,29 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         // along with their data types is given
 
         val query = ("CREATE TABLE " + TABLE_NAME + " (" + ID_COL + " INTEGER PRIMARY KEY, " + COMPANY_NAME + " TEXT," + WEBSITE + " TEXT," + EMAIL + " TEXT," +
-                PHONE + " INTEGER," + STATE + " INTEGER," + COMPANY_TYPE +" TEXT," + DEAL_TYPE + " TEXT," + DEAL_TIME + " TEXT" +")")
+                PHONE + " INTEGER," + STATE + " INTEGER," + COMPANY_TYPE +" TEXT," + DEAL_TYPE + " TEXT," + DEAL_TIME + " TEXT," + LOCATION + " TEXT,"+ LOCATION_INFO +
+                " TEXT" + ")")
 
         // we are calling sqlite
         // method for executing our query
         db.execSQL(query)
+
+        val query2 = ("CREATE TABLE " + TABLE_NAME_2 + " (" + ID_COL + " INTEGER PRIMARY KEY, " + PHONE + " INTEGER," + PLAKA + " TEXT," + ACCIDENT_TYPE +" TEXT,"
+                + ACCIDENT_DATE + " TEXT," + ACCIDENT_INFO + " TEXT," + PHOTO + " TEXT,"+ YOL_YARDIMI +
+                " INTEGER" + ")")
+
+        db.execSQL(query2)
     }
 
     override fun onUpgrade(db: SQLiteDatabase, p1: Int, p2: Int) {
         // this method is to check if table already exists
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME)
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME_2)
         onCreate(db)
     }
 
     // This method is for adding data in our database
-    fun addValues(company_name : String, website : String, email : String, phone : Int, state : Int, company_type: String, deal_Type: String, deal_time: String ){
+    fun addValuesKurum(company_name : String, website : String, email : String, phone : Int, state : Int, company_type: String, deal_Type: String, deal_time: String ){
 
         // below we are creating
         // a content values variable
@@ -59,7 +67,7 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         db.close()
     }
 
-    fun deleteValue(company_name: String) {
+    fun deleteValueKurum(company_name: String) {
 
         // on below line we are creating
         // a variable to write our database.
@@ -72,7 +80,7 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
     }
     // below method is to get
     // all data from our database
-    fun getValues(): Cursor? {
+    fun  getValuesKurum(): Cursor? {
 
         // here we are creating a readable
         // variable of our database
@@ -95,8 +103,8 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         private val DATABASE_VERSION = 1
 
         // below is the variable for table name
-        val TABLE_NAME = "kasko"
-
+        val TABLE_NAME = "Kurum"
+        val TABLE_NAME_2 = "ARIZA"
         // below is the variable for id column
         val ID_COL = "id"
         val COMPANY_NAME = "company_name"
@@ -107,6 +115,13 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         val COMPANY_TYPE = "company_type"
         val DEAL_TYPE = "deal_type"
         val DEAL_TIME = "deal_time"
-
+        val LOCATION = "location"
+        val LOCATION_INFO = "location_info"
+        val PLAKA = "plaka"
+        val ACCIDENT_TYPE = "accident_type"
+        val ACCIDENT_DATE = "accident_date"
+        val ACCIDENT_INFO = "accident_info"
+        val PHOTO = "photo"
+        val YOL_YARDIMI = "yol_yardimi"
     }
 }

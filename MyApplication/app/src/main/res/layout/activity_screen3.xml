@@ -45,9 +45,9 @@
                 android:layout_marginLeft="30dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/transparent_bg_bordered_button"
-                android:hint="   arama..."
+                android:hint="   Arama..."
                 android:textSize="15dp"
-                android:inputType="phone"
+                android:inputType="text"
                 android:drawableRight="@drawable/dosyaekleicon"/>
 
             <ListView

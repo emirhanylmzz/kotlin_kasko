@@ -22,7 +22,7 @@ class screen4_activity : AppCompatActivity() {
         // we have called method to get
         // all names from our database
         // and add to name text view
-        val cursor = db.getValues()
+        val cursor = db.getValuesKurum()
 
         // moving the cursor to first position and
         // appending value in the text view
@@ -47,7 +47,7 @@ class screen4_activity : AppCompatActivity() {
         list_item.setOnItemClickListener { parent, view, position, id ->
             val element = arrayAdapter.getItem(position) // The item that was clicked
             if (element != null) {
-                db.deleteValue(element)
+                db.deleteValueKurum(element)
                 val intent = Intent(this, screen4_activity::class.java)
                 startActivity(intent)
             }
