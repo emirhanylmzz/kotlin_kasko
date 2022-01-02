@@ -25,7 +25,7 @@ class Screen2_Activity : AppCompatActivity() {
             // Apply the adapter to the spinner
             spinnerKurumTuru.adapter = adapter
         }
-
+        val kurumturu: String = spinnerKurumTuru.getSelectedItem().toString()
         val spinnerAnlasmaTuru: Spinner = findViewById(R.id.anlasmaturu)
         // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter.createFromResource(
@@ -63,10 +63,10 @@ class Screen2_Activity : AppCompatActivity() {
 
             val anlasmaturu_ = "aa"//anlasmaturu.getSelectedItem().toString()
             val anlasmasuresi_ = anlasmasuresi.text.toString()
-
+            val state = 1
             // calling method to add
             // name to our database
-            db.addValuesKurum(c_name, website, mail_, telefon, tur, adres_, anlasmaturu_, anlasmasuresi_)
+            db.addValuesKurum(c_name, website, mail_, telefon, state, kurumturu, adres_, anlasmaturu_, anlasmasuresi_)
 
             // Toast to message on the screen
             Toast.makeText(this, "Kurum sisteme başarıyla eklendi", Toast.LENGTH_LONG).show()

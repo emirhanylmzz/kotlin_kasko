@@ -37,7 +37,7 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
     }
 
     // This method is for adding data in our database
-    fun addValuesKurum(company_name : String, website : String, email : String, phone : Int, state : Int, company_type: String, deal_Type: String, deal_time: String ){
+    fun addValuesKurum(company_name : String, website : String, email : String, phone : Int, state : Int, company_type: String, location: String , deal_Type: String, deal_time: String ){
 
         // below we are creating
         // a content values variable
@@ -50,9 +50,10 @@ class DBHelper(context: Context, factory: SQLiteDatabase.CursorFactory?) :
         values.put(EMAIL, email)
         values.put(PHONE, phone)
         values.put(STATE, state)
+        values.put(COMPANY_TYPE, company_type)
         values.put(DEAL_TYPE, deal_Type)
         values.put(DEAL_TIME, deal_time)
-
+        values.put(LOCATION, location)
         // here we are creating a
         // writable variable of
         // our database as we want to

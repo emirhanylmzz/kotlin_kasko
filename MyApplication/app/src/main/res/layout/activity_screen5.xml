@@ -15,11 +15,10 @@
         android:text=" Kurum Bilgisi"
         android:textColor="#FFFFFF" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
         android:layout_width="match_parent"
-        android:layout_height="327dp"
-        app:srcCompat="@drawable/otolastik" />
+        android:layout_height="322dp" />
 
     <TextView
         android:id="@+id/companyname"

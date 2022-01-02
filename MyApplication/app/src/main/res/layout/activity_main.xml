@@ -98,5 +98,65 @@
         android:textColor="#000000"
         android:textSize="15dp"
         app:backgroundTint="#FFFFFF" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+    <View
+        android:layout_marginLeft="50dp"
+        android:layout_width="314dp"
+        android:layout_height="1dp"
+        android:background="#3a383b" />
+
+    <Button
+        android:id="@+id/kaza_bildirimi"
+        android:layout_width="314dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="0"
+        android:background="#FFFFFF"
+        android:text="Kaza Bildirimi/Yol Yardımı"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:backgroundTint="#FFFFFF" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+    <View
+        android:layout_marginLeft="50dp"
+        android:layout_width="314dp"
+        android:layout_height="1dp"
+        android:background="#3a383b" />
+
+    <Button
+        android:id="@+id/talep_olustur"
+        android:layout_width="314dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="0"
+        android:background="#FFFFFF"
+        android:text="Talep Oluştur"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:backgroundTint="#FFFFFF" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+    <View
+        android:layout_marginLeft="50dp"
+        android:layout_width="314dp"
+        android:layout_height="1dp"
+        android:background="#3a383b" />
+
+    <Button
+        android:id="@+id/talep_sorgula"
+        android:layout_width="314dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="50dp"
+        android:layout_weight="0"
+        android:background="#FFFFFF"
+        android:text="Talep Sorgula"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        app:backgroundTint="#FFFFFF" />
 
 </LinearLayout>

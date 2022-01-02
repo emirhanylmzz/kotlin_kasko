@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".Screen5_activity"></activity>
+        <activity android:name=".talep_olustur"></activity>
+        <activity android:name=".Screen5_activity" />
         <activity android:name=".screen4_activity" />
         <activity android:name=".Screen3_Activity" />
         <activity android:name=".Screen2_Activity" />

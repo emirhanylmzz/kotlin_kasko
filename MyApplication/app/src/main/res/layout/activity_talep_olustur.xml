@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".talep_olustur">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/kisisayisi"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kazaya Karışan Kişi Sayısı: 1"
+            android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/isim"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İsim:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/isimedit"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/transparent_bg_bordered_button"
+            android:hint="    İsim.."
+            android:textSize="15dp"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/soyisim"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Soyisim:"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/soyisimedit"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/transparent_bg_bordered_button"
+            android:hint="    Soyisim.."
+            android:textSize="15dp"
+            android:inputType="text" />
+        <TextView
+            android:id="@+id/mail"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mail adresi"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/mailedit"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/transparent_bg_bordered_button"
+            android:hint="    example@abc.com"
+            android:textSize="15dp"
+            android:inputType="textEmailAddress" />
+        <TextView
+            android:id="@+id/phone"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefon Numarası"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/phoneedir"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/transparent_bg_bordered_button"
+            android:hint="    (5XX) XXX-XX-XX"
+            android:textSize="15dp"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/button_ekle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#000"
+            android:text="Yeni Kişi Ekle"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/kazatarihi"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kaza Tarihi"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/kazatarihiedit"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/transparent_bg_bordered_button"
+            android:text="Seciniz"
+            android:textSize="15dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hasarfototext"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Araç Hasar Fotoğrafı"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/dosya_eklehasar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#FFFF"
+                android:text="Dosya Ekle"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tutanak"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kaza Tutanağının Kopyası"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/tutanakekle"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:backgroundTint="#FFFF"
+                android:text="Dosya Ekle"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/gönder"
+            android:layout_width="359dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="#000"
+            android:text="GÖNDER"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+</ScrollView>
+
+
+

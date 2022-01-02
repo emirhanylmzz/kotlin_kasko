@@ -190,13 +190,13 @@
                 android:id="@+id/anlasmasuresi"
                 android:layout_width="match_parent"
                 android:layout_height="38dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="30dp"
                 android:background="@drawable/transparent_bg_bordered_button"
                 android:hint="    gg/aa/yyyy"
-                android:textSize="15dp"
-                android:inputType="date" />
+                android:inputType="date|text"
+                android:textSize="15dp" />
 
             <Button
                 android:id="@+id/button_ekle"

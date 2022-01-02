@@ -3,7 +3,6 @@ package com.example.myapplication
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -48,10 +47,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, screen4_activity::class.java)
             startActivity(intent)
         }
+        talep_olustur.setOnClickListener{
+            val intent = Intent(this, com.example.myapplication.talep_olustur::class.java)
+            startActivity(intent)
+        }
+
         // below code is to add on click
         // listener to our print name button
         /*printName.setOnClickListener{
-
+ 
             // creating a DBHelper class
             // and passing context to it
             val db = DBHelper(this, null)
